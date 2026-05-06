@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Sistema Universitario</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Universidad</h2>
+    <ul>
+      <li onclick="mostrarSeccion('inicio')">Inicio</li>
+      <li onclick="mostrarSeccion('estudiantes')">Estudiantes</li>
+      <li onclick="mostrarSeccion('cursos')">Cursos</li>
+    </ul>
+  </div>
+
+  <!-- Contenido -->
+  <div class="contenido">
+
+    <!-- Inicio -->
+    <section id="inicio" class="seccion activa">
+      <h1>Bienvenido</h1>
+      <p>Sistema de gestión universitaria</p>
+    </section>
+
+    <!-- Estudiantes -->
+    <section id="estudiantes" class="seccion">
+      <h1>Registro de Estudiantes</h1>
+
+      <input type="text" id="nombreEstudiante" placeholder="Nombre">
+      <button onclick="agregarEstudiante()">Agregar</button>
+
+      <ul id="listaEstudiantes"></ul>
+    </section>
+
+    <!-- Cursos -->
+    <section id="cursos" class="seccion">
+      <h1>Cursos</h1>
+      <p>Listado de cursos disponibles</p>
+
+      <ul>
+        <li>Matemática</li>
+        <li>Programación</li>
+        <li>Física</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

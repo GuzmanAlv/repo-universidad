@@ -1,0 +1,77 @@
+/* ====== DISEÑO GENERAL ====== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #2c3e50;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar li:hover {
+  background: #34495e;
+}
+
+/* Contenido */
+.contenido {
+  flex: 1;
+  padding: 20px;
+  background: #ecf0f1;
+}
+
+/* Secciones */
+.seccion {
+  display: none;
+}
+
+.seccion.activa {
+  display: block;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 200px;
+}
+
+/* Botón */
+button {
+  padding: 10px;
+  background: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* Lista */
+ul {
+  margin-top: 10px;
+}
